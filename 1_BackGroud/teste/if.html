@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF</title>
+    <style>
+        body{
+            font: normal 16pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Else</h1>
+    <input type="text" placeholder="Brasil" name="txtb" id="txtb">
+    <input type="button" value="verificar" onclick = "calcular()">
+    <div id = "res">Aguardando resposta</div>
+    <script>
+        function calcular() {
+            var txtb = document.querySelector('input#txtb')
+            var res = document.querySelector('div#res')
+            var vel = String(txtb.value)
+            res.innerHTML = `<p>Você esta no pais: ${vel}</p>`
+            if (vel == 'Brasil'){
+                res.innerHTML += '<p>você é Brasileiro</p>'
+            }else{
+                res.innerHTML += `<p>você é estrangeiro no pais ${vel}</p>`
+            }
+        }
+    </script>
+</body>
+</html>
