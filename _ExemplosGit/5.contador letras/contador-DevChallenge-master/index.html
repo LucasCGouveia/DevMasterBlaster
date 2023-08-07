@@ -1,0 +1,49 @@
+<!-- Contador
+Informe uma data
+DD/MM/AAAA
+Iniciar contagem -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="home">
+        <h1>Contador</h1>
+        <label for="date">Informe uma data</label>
+        <input type="date" id="date">
+        <button onclick="start()">Iniciar Contagem</button>
+    </section>
+    <section class="contador" style="display: none">
+        <div class="header">
+            <h1>Contador</h1>
+            <button onclick="back()">Reiniciar</button>
+        </div>
+        <span>Faltam</span>
+        <div class="wrapper">
+            <div>
+                <span id="days">2</span>
+                <span>Dias</span>
+            </div>
+            <div>
+                <span id="hours">10</span>
+                <span>Horas</span>
+            </div>
+            <div>
+                <span id="minutes">40</span>
+                <span>Minutos</span>
+            </div>
+            <div>
+                <span id="seconds">13</span>
+                <span>Segundos</span>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
