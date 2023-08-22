@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <style>
+            body{
+                background-color: rgb(234, 255, 203);
+                color: rgb(30, 37, 10);
+                font: normal 16pt arial;
+            }
+            #h1{
+                background-color: rgb(30, 37, 10);
+                color: rgb(234, 255, 203);
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+                border-radius: 75px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id = 'h1'>Dom</h1>
+       <script>
+        /*
+        //window.alert('foda-se')
+        
+        let presaoAtual = Number.parseFloat(prompt('Presao atual dos pneu:'))
+        let calibrar = Number.parseFloat(prompt('Presao recomendade do pneu'))
+        let diferanca = calibrar - presaoAtual
+
+        if(diferanca > presaoAtual){
+            document.write(`A diferença é maior: <strong>${diferanca.toFixed(1).replace('.',',')}</strong>`)
+        }
+        else{
+            document.write(`A diferença é menor: <strong>${diferanca.toFixed(1).replace('.',',')}</strong>`)
+        }
+        */
+        var rato = document.getElementById('h1')
+        rato.addEventListener('mouseenter', enter)
+        rato.addEventListener('mouseout', out)
+        rato.addEventListener('click', clicked)
+
+        function enter(){
+            rato.innerText = "Click"
+        }
+        function out(){
+            rato.innerText = "Dom"
+        }
+        function clicked(){
+            rato.innerText = "Clicked!"
+        }
+       </script>
+    </body>
+</html>

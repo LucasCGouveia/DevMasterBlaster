@@ -1,49 +1,30 @@
-<!-- Contador
-Informe uma data
-DD/MM/AAAA
-Iniciar contagem -->
+<html>
+<!--
+	@author: Andre Cardoso (andrebian.com)
+-->
 
-<!DOCTYPE html>
-<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
-    <link rel="stylesheet" href="css/05_ContadorLetras.css">
-</head>
-<body>
-    <section class="home">
-        <h1>Contador</h1>
-        <label for="date">Informe uma data</label>
-        <input type="date" id="date">
-        <button onclick="start()">Iniciar Contagem</button>
-    </section>
-    <section class="contador" style="display: none">
-        <div class="header">
-            <h1>Contador</h1>
-            <button onclick="back()">Reiniciar</button>
-        </div>
-        <span>Faltam</span>
-        <div class="wrapper">
-            <div>
-                <span id="days">2</span>
-                <span>Dias</span>
-            </div>
-            <div>
-                <span id="hours">10</span>
-                <span>Horas</span>
-            </div>
-            <div>
-                <span id="minutes">40</span>
-                <span>Minutos</span>
-            </div>
-            <div>
-                <span id="seconds">13</span>
-                <span>Segundos</span>
-            </div>
-        </div>
-    </section>
+    <title>Contagem de caracteres - Andrebian.com</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/05_ContadorLetras.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="row g-0">
+            <div class="mb-3">
+                <label class = "form-label" for="campoDigitacao">Digite seu Texto:</label>
+                <textarea class="form-control" id="campoDigitacao"></textarea>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="mb-3">
+                Seu texto possui <span id="quantCaracteres">0</span> caracteres e <span id="quantPalavras">0</span>
+                palavras.
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
