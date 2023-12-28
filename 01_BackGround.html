@@ -8,32 +8,33 @@
 
 <style>
 	body {
-		background-color: purple;
-		/* background-color: #542115; */
-		/* background-color: rgb(red, green, blue); */
+		/* background-color: purple; */
+		/* background-color: #1eb557; */
+		background-color: rgb(150,84,55);
 	}
 
 	.fonteBranca{
 		color: white;
+		font-size: 14px;
 	}
 </style>
 
 <body>
 
 	<div class="row">
-		<h2 id="header2" style="text-align: center;color: white;">BackGround</h2>
+		<h2 id="header2" style="text-align: center;color: azure;" >BackGround</h2>
 	</div>
 
 	<div class="row">
-		<div class="col mb-4">
+		<div class="col">
 			<div class="card form-row" id="divAmarela" style="background-color: yellow; width: 200px;height: 200px;">
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col">
 			<div class="card form-row" id="divVermelha" style="background-color: red; width: 200px;height: 200px;">
 			</div>
 		</div>
-		<div class="col mb-4">
+		<div class="col">
 			<div class="card form-row" id="divAzul" style="background-color: blue; width: 200px;height: 200px;"></div>
 		</div>
 	</div>
@@ -51,7 +52,9 @@
 			<input class="btn btn-primary" type="button" value="Mudar Cor Card Amarelo"	onclick="mudarBackgroudCardAmarelo()" />
 		</div>
 		<div class="col">
-			<input class="btn btn-secondary" type="button" value="Mudar Cor Card Vermelho" onclick="mudarBackgroudCardVermelho()" />
+			<input class="btn btn-secondary"
+			 type="button" value="Mudar Cor Card Vermelho"
+			  onclick="mudarBackgroudCardVermelho()" />
 		</div>
 		<div class="col">
 			<input class="btn btn-light" type="button" value="Mudar Cor Card Azul" onclick="mudarBackgroudCardAzul()" />
@@ -61,7 +64,7 @@
 		</div>
 	</div>
 
-	<script src="backGroud.js"></script>
+	<script src="js/01_BackGround.js"></script>
 </body>
 
 </html>
